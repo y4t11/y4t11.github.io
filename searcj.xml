@@ -21,7 +21,7 @@
       <link href="/2024/04/02/2024.4.2%20%E7%AC%AC%E4%B8%80%E7%AF%87blog/"/>
       <url>/2024/04/02/2024.4.2%20%E7%AC%AC%E4%B8%80%E7%AF%87blog/</url>
       
-        <content type="html"><![CDATA[<h2 id="Hello-World！"><a href="#Hello-World！" class="headerlink" title="Hello World！"></a>Hello World！</h2><p>前两天网上搜β衰变的时候。碰巧看见了一位大神的博客，上面的笔记写的贼好，突然想自己也做个博客网站。最开始想和他一样用hexo，中途感觉太难给劝退了，后面换了gridea、WordPress，后来还是觉得hexo比较好，也沿用了跟他一样的主题（我是什么学人精吗），换了个教程看，也算搭出来个能看的站点了。域名后缀选了个比较有意义的，嘿。 可是没多久又发现头像一直显示不出来，花了很长时间排查原因也没查出个所以然，也搁置了网站的完善工作，索性先不管了，准备后续从头再来。先随便写点吧。</p><p>作为一个小白能一两天搭出来网站还算对自己比较满意了，不过这几天熬夜白天也没怎么上课，清明节假期还得蹲寝室看回放qwq。</p><p>跟每个博主一样，希望能坚持把这个网站做下去，笔记方面个人并不太会排版，所以就主要分享一些生活、感想和书摘吧，等什么时候有信心了再上传一些自己整理后的笔记。最近再学一些文章美化的功能，争取这个月能把这个网站做到满意吧。也是对自己大学生活的一个记录，以后也可以回顾。</p><p>与诸位共勉。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Hello-World！"><a href="#Hello-World！" class="headerlink" title="Hello World！"></a>Hello World！</h2><p>前两天网上搜β衰变的时候。碰巧看见了一位大神的博客，上面的笔记写的贼好，突然想自己也做个博客网站。最开始想和他一样用hexo，中途感觉太难给劝退了，后面换了gridea、WordPress，后来还是觉得hexo比较好，也沿用了跟他一样的主题（我是什么学人精吗），换了个教程看，也算搭出来个能看的站点了。域名后缀选了个比较有意义的，嘿。 可是没多久又发现头像一直显示不出来，花了很长时间排查原因也没查出个所以然，也搁置了网站的完善工作，索性先不管了，准备后续从头再来。先随便写点吧。</p><p>作为一个小白能一两天搭出来网站还算对自己比较满意了，不过这几天熬夜白天也没怎么上课，清明节假期还得蹲寝室看回放qwq。</p><p>跟每个博主一样，希望能坚持把这个网站做下去，笔记方面个人并不太会排版，所以就主要分享一些生活、感想和书摘吧，等什么时候有信心了再上传一些自己整理后的笔记。最近再学一些文章美化的功能，争取这个月能把这个网站做到满意吧。也是对自己大学生活的一个记录，以后也可以回顾。</p><p>与诸位共勉。</p><p><img src="program files\blog\blog-demo\source\img\avatar.jpg" alt="avatar"></p>]]></content>
       
       
       
@@ -66,9 +66,9 @@
     
     
     <entry>
-      <title>友链</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>movie</title>
+      <link href="/movie/index.html"/>
+      <url>/movie/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -77,9 +77,9 @@
     
     
     <entry>
-      <title>movie</title>
-      <link href="/movie/index.html"/>
-      <url>/movie/index.html</url>
+      <title>友链</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       

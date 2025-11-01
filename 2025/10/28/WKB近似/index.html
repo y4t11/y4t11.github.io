@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://ystein.cc/img/WKB%E8%BF%91%E4%BC%BC.png">
 <meta property="article:published_time" content="2025-10-28T05:44:23.203Z">
-<meta property="article:modified_time" content="2025-11-01T13:43:24.942Z">
+<meta property="article:modified_time" content="2025-11-01T14:05:24.705Z">
 <meta property="article:author" content="严斯坦">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://ystein.cc/img/WKB%E8%BF%91%E4%BC%BC.png"><link rel="shortcut icon" href="https://pic.baike.soso.com/p/20140221/bki-20140221062737-360633136.jpg"><link rel="canonical" href="http://ystein.cc/2025/10/28/WKB%E8%BF%91%E4%BC%BC/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
@@ -55,7 +55,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2025-11-01 21:43:24'
+  postUpdate: '2025-11-01 22:05:24'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -326,10 +326,8 @@ $$<br>
 $$<br>
 \gamma = \frac{\sqrt{2mE}}{\hbar}<br>
 \left[<br>
-r_2!\left(\frac{\pi}{2} - \sin^{-1}!\sqrt{\frac{r_1}{r_2}}\right)</p>
-<ul>
-<li>\sqrt{r_1(r_2 - r_1)}<br>
-\right].  \tag{26}<br>
+r_2(\frac{\pi}{2} - \sin^{-1}\sqrt{\frac{r_1}{r_2}})-\sqrt{r_1(r_2 - r_1)}<br>
+\right]  \tag{26}<br>
 $$<br>
 一般有，$r_1 \ll r_2$，那么可以利用小角近似（$sin\epsilon \approx \epsilon$）简化上式：<br>
 $$<br>
@@ -343,8 +341,7 @@ K_1 \equiv<br>
 \left(\frac{e^2}{4\pi\epsilon_0}\right)<br>
 \frac{\pi\sqrt{2m}}{\hbar}<br>
 = 1.980,\text{MeV}^{1/2},  \tag{28}<br>
-$$</li>
-</ul>
+$$</p>
 <p>$$<br>
 K_2 \equiv<br>
 \left(\frac{e^2}{4\pi\epsilon_0}\right)^{1/2}<br>
@@ -366,14 +363,15 @@ Unfortunately，我们不知道$v$，但是不要紧，因为从一个放射性�
 <p><strong>图 7</strong>：右转折点的放大图</p>
 <p>​		 简单起见，我们移动坐标轴，使右转折点处在 x=0。由 WKB 近似，我们有：<br>
 $$<br>
-\psi(x) \equiv<br>
+\psi(x) \cong<br>
 \begin{cases}<br>
 \dfrac{1}{\sqrt{p(x)}}<br>
 \left[<br>
 B e^{\dfrac{i}{\hbar}\int_x^{0} p(x’),dx’} +<br>
 C e^{-\dfrac{i}{\hbar}\int_x^{0} p(x’),dx’}<br>
 \right],<br>
-&amp; x &lt; 0 \[1.2em]<br>
+&amp; x &lt; 0<br>
+\<br>
 \dfrac{1}{\sqrt{|p(x)|}} D<br>
 e^{-\dfrac{1}{\hbar}\int_0^{x} |p(x’)|,dx’},<br>
 &amp; x &gt; 0<br>
@@ -384,16 +382,14 @@ $$<br>
 $$<br>
 V(x) \cong E + V’(0)x  \tag{32}<br>
 $$<br>
-然后对这个线性V解薛定谔方程：<br>
+然后对这个线性$V$解薛定谔方程：<br>
 $$<br>
--\dfrac{\hbar^2}{2m}\dfrac{d^2 \psi_p}{dx^2}</p>
-<ul>
-<li>\left[ E + V’(0)x \right] \psi_p<br>
+-\frac{\hbar^2}{2m}\frac{d^2 \psi_p}{dx^2} + [E + V’(0)x] \psi_p<br>
 = E \psi_p<br>
 $$<br>
 移项一下：<br>
 $$<br>
-\dfrac{d^2 \psi_p}{dx^2} = \alpha^3 x \psi_p  \tag{33}<br>
+\frac{d^2 \psi_p}{dx^2} = \alpha^3 x \psi_p  \tag{33}<br>
 $$<br>
 其中<br>
 $$<br>
@@ -403,13 +399,12 @@ $$<br>
 $$<br>
 z \equiv \alpha x  \tag{35}<br>
 $$<br>
-可以把$α$吸收其中。</li>
-</ul>
+可以把$α$吸收其中。</p>
 <p>这样的话方程变成如下形式：<br>
 $$<br>
 \dfrac{d^2 \psi_p}{dz^2} = z \psi_p  \tag{36}<br>
 $$<br>
-这是艾里方程，其解为艾里函数。因为艾里方程是一个二阶微分方程，所以有两个线性 独立的艾里函数，$Ai(z)$和 $Bi(z)$ 。</p>
+这是艾里方程，其解为艾里函数。因为艾里方程是一个二阶微分方程，所以有两个线性独立的艾里函数，$Ai(z)$和 $Bi(z)$ 。</p>
 <p><img src="image8.png" alt="image8"></p>
 <p><strong>图 8</strong>：艾里函数性质与图</p>
 <p>A与B在y轴左侧都是振荡，区别在于y轴右侧A是指数衰减B是指数增长。显然修补波函数是$Ai(z)$和 $Bi(z)$的线性组合：<br>
@@ -420,7 +415,7 @@ $$<br>
 <p>现在我们要做的就是在修补区与近似区重叠的重叠区匹配两个波函数。</p>
 <p><img src="image9.png" alt="image9"></p>
 <p><strong>图 9</strong>：两个重叠区与修补区</p>
-<h2 id="​-在重叠区-32-式成立，那么利用-34-式的表述，可以得到：-p-x-equiv-sqrt-2m-E-E-V’-0-x-hbar-alpha-3-2-sqrt-x-tag-38-特别地，在右侧第二个相交区：-int-0-x-p-x’-dx’-equiv-hbar-alpha-3-2-int-0-x-sqrt-x’-dx’-dfrac-2-3-hbar-alpha-x-3-2-因此WKB波函数（31式）可以写成：-psi-x-simeq-frac-D-sqrt-hbar-alpha-3-4-x-1-4-e-frac-2-3-alpha-x-3-2-tag-39-同时，利用艾里函数在-z-很大时候的渐进形式（图7），第二重叠区的波函数（37式）成为：-psi-p-x-simeq-frac-a-2-sqrt-pi-alpha-x-1-4-e-frac-2-3-alpha-x-3-2-frac-b-sqrt-pi-alpha-x-1-4-e-frac-2-3-alpha-x-3-2-tag-40-比较这两个解，可以得到：-a-sqrt-frac-4-pi-alpha-hbar-D-qquadb-0-tag-41-对第一重叠区重复以上步骤。此时-p-x-仍由（38）式给出，只不过现在-x-为负，所以：-int-x-0-p-x’-dx’-cong-frac-2-3-hbar-alpha-x-3-2-tag-42-WKB波函数（31式）为：-psi-x-cong-frac-1-sqrt-hbar-alpha-3-4-x-1-4-left-B-e-tfrac-i-3-tfrac-2-hbar-alpha-x-3-2-C-e-tfrac-i-3-tfrac-2-hbar-alpha-x-3-2-right-tag-43-同时，利用艾里函数在负的大-z-时候的渐进式（图7），修补波函数（37式，其中-b-0-）为：-begin-aligned-psi-p-x-cong-frac-a-sqrt-pi-alpha-x-1-4-sin-left-frac-2-3-alpha-x-3-2-frac-pi-4-right-0-5em-frac-a-sqrt-pi-alpha-x-1-4-cdot-frac-1-2i-left-e-i-pi-4-e-tfrac-i2-3-alpha-x-3-2">​		 在重叠区(32)式成立，那么利用(34)式的表述，可以得到：<br>
+<h2 id="​-在重叠区-32-式成立，那么利用-34-式的表述，可以得到：-p-x-equiv-sqrt-2m-E-E-V’-0-x-hbar-alpha-3-2-sqrt-x-tag-38-特别地，在右侧第二个相交区：-int-0-x-p-x’-dx’-equiv-hbar-alpha-3-2-int-0-x-sqrt-x’-dx’-dfrac-2-3-hbar-alpha-x-3-2-因此WKB波函数（31式）可以写成：-psi-x-cong-frac-D-sqrt-hbar-alpha-3-4-x-1-4-e-frac-2-3-alpha-x-3-2-tag-39-同时，利用艾里函数在-z-很大时候的渐进形式（图7），第二重叠区的波函数（37式）成为：-psi-p-x-cong-frac-a-2-sqrt-pi-alpha-x-1-4-e-frac-2-3-alpha-x-3-2-frac-b-sqrt-pi-alpha-x-1-4-e-frac-2-3-alpha-x-3-2-tag-40-比较这两个解，可以得到：-a-sqrt-frac-4-pi-alpha-hbar-D-qquadb-0-tag-41-对第一重叠区重复以上步骤。此时-p-x-仍由（38）式给出，只不过现在-x-为负，所以：-int-x-0-p-x’-dx’-cong-frac-2-3-hbar-alpha-x-3-2-tag-42-WKB波函数（31式）为：-psi-x-cong-frac-1-sqrt-hbar-alpha-3-4-x-1-4-left-B-e-tfrac-i-3-tfrac-2-hbar-alpha-x-3-2-C-e-tfrac-i-3-tfrac-2-hbar-alpha-x-3-2-right-tag-43-同时，利用艾里函数在负的大-z-时候的渐进式（图7），修补波函数（37式，其中-b-0-）为：-begin-aligned-psi-p-x-cong-frac-a-sqrt-pi-alpha-x-1-4-sin-left-frac-2-3-alpha-x-3-2-frac-pi-4-right-0-5em-frac-a-sqrt-pi-alpha-x-1-4-cdot-frac-1-2i-left-e-i-pi-4-e-tfrac-i2-3-alpha-x-3-2">​		 在重叠区(32)式成立，那么利用(34)式的表述，可以得到：<br>
 $$<br>
 p(x) \equiv \sqrt{2m(E - E - V’(0)x)}<br>
 = \hbar \alpha^{3/2} \sqrt{-x}  \tag{38}<br>
@@ -433,13 +428,13 @@ $$<br>
 $$<br>
 因此WKB波函数（31式）可以写成：<br>
 $$<br>
-\psi(x) \simeq<br>
+\psi(x) \cong<br>
 \frac{D}{\sqrt{\hbar},\alpha^{3/4} x^{1/4}}<br>
 , e^{-\frac{2}{3}(\alpha x)^{3/2}}  \tag{39}<br>
 $$<br>
 同时，利用艾里函数在$z$很大时候的渐进形式（图7），第二重叠区的波函数（37式）成为：<br>
 $$<br>
-\psi_p(x) \simeq<br>
+\psi_p(x) \cong<br>
 \frac{a}{2\sqrt{\pi},(\alpha x)^{1/4}}<br>
 e^{-\frac{2}{3}(\alpha x)^{3/2}}<br>
 +<br>
@@ -497,7 +492,7 @@ B = -i e^{i\pi/4} D,<br>
 \qquad<br>
 C = i e^{-i\pi/4} D  \tag{45}<br>
 $$<br>
-这就是所谓的<strong>连接公式</strong>，它们连接转折点两边的 WKB 解。我们现在可以摆脱修补波函数了，引入它的唯一的目的是连接转折点两边的 WKB 解。以归一化常数 D 表示所有的常数，并将转折点从原点移动至任意点$x_2$，则 WKB 波函数变为：<br>
+这就是所谓的<strong>连接公式</strong>，它们连接转折点两边的 WKB 解。我们现在可以摆脱修补波函数了，引入它的唯一的目的是连接转折点两边的 WKB 解。以归一化常数$D$表示所有的常数，并将转折点从原点移动至任意点$x_2$，则 WKB 波函数变为：<br>
 $$<br>
 \psi(x) \cong<br>
 \begin{cases}<br>
@@ -530,7 +525,7 @@ $$<br>
 $$<br>
 特别的，如果我们只讨论势阱（图9c），内部区域($x_1&lt;x&lt;x_2$)的波函数可以写成：<br>
 $$<br>
-\psi(x) \simeq<br>
+\psi(x) \cong<br>
 \dfrac{2D}{\sqrt{p(x)}} \sin \theta_2(x),<br>
 \quad<br>
 \text{其中}\quad<br>
@@ -538,7 +533,7 @@ $$<br>
 $$<br>
 由（46）式。或者<br>
 $$<br>
-\psi(x) \simeq<br>
+\psi(x) \cong<br>
 \dfrac{-2D’}{\sqrt{p(x)}} \sin \theta_1(x),<br>
 \quad<br>
 \text{其中}\quad<br>
@@ -553,7 +548,7 @@ $$<br>
 <img src="image10.png" alt="image10"></p>
 <p><strong>图 10</strong>：在转折点处的向上和向下倾斜</p>
 <p>这个量子化条件决定了“典型的”有两个倾斜边的势阱的允许能量。注意到它与两边垂直的势阱（18式）和一边垂直的势阱(此处不计算)的不同仅在于从 n 减去数的不同（$0$，$1/4$，或 $1/2$）。由于 WKB 近似在半经典(大 $n$ 时)领域最为适用，所以这种区别仅是表观的而不是 实质的。在很多情况下，这个结果非常有用，因为它可以使我们在不求解 $Schrödinger$ 方程的情况下，简单地求一个积分就可计算(估算)出允许能量。而不用考虑波函数本身。</p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://ystein.cc">严斯坦</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://ystein.cc/2025/10/28/WKB%E8%BF%91%E4%BC%BC/">http://ystein.cc/2025/10/28/WKB%E8%BF%91%E4%BC%BC/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://ystein.cc" target="_blank">Ystein</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/WKB%E8%BF%91%E4%BC%BC.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2025/05/04/%E5%B5%8C%E5%85%A5%E5%BC%8Fc%E8%AF%AD%E8%A8%80/" title="嵌入式c语言笔记"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">嵌入式c语言笔记</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">严斯坦</div><div class="author-info__description">蔑视比较</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/y4t11"><i class="fab fa-github"></i><span>博主的github首页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:yansitan7@gmail.com" target="_blank" title="Email Me"><i class="fas fa-regular fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">WKB近似</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3"><span class="toc-text">基本思想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E5%8C%BA%E5%9F%9F"><span class="toc-text">经典区域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%82%E8%A7%A3%E6%B3%A2%E5%87%BD%E6%95%B0"><span class="toc-text">求解波函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E9%99%90%E6%B7%B1%E5%8A%BF%E9%98%B1"><span class="toc-text">无限深势阱</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9A%A7%E7%A9%BF%E5%8C%BA%E5%9F%9F"><span class="toc-text">隧穿区域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%BB%B4%E5%8A%BF%E5%9E%92%E9%9A%A7%E7%A9%BF"><span class="toc-text">一维势垒隧穿</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%CE%B1%E8%A1%B0%E5%8F%98%EF%BC%88Gamow%E2%80%99s-theory-of-alpha-decay%EF%BC%89"><span class="toc-text">α衰变（Gamow’s theory of alpha decay）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E5%8C%BA%E5%9F%9F"><span class="toc-text">连接区域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E5%85%AC%E5%BC%8F"><span class="toc-text">连接公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%8B-%E5%9C%A8%E9%87%8D%E5%8F%A0%E5%8C%BA-32-%E5%BC%8F%E6%88%90%E7%AB%8B%EF%BC%8C%E9%82%A3%E4%B9%88%E5%88%A9%E7%94%A8-34-%E5%BC%8F%E7%9A%84%E8%A1%A8%E8%BF%B0%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%BE%97%E5%88%B0%EF%BC%9A-p-x-equiv-sqrt-2m-E-E-V%E2%80%99-0-x-hbar-alpha-3-2-sqrt-x-tag-38-%E7%89%B9%E5%88%AB%E5%9C%B0%EF%BC%8C%E5%9C%A8%E5%8F%B3%E4%BE%A7%E7%AC%AC%E4%BA%8C%E4%B8%AA%E7%9B%B8%E4%BA%A4%E5%8C%BA%EF%BC%9A-int-0-x-p-x%E2%80%99-dx%E2%80%99-equiv-hbar-alpha-3-2-int-0-x-sqrt-x%E2%80%99-dx%E2%80%99-dfrac-2-3-hbar-alpha-x-3-2-%E5%9B%A0%E6%AD%A4WKB%E6%B3%A2%E5%87%BD%E6%95%B0%EF%BC%8831%E5%BC%8F%EF%BC%89%E5%8F%AF%E4%BB%A5%E5%86%99%E6%88%90%EF%BC%9A-psi-x-simeq-frac-D-sqrt-hbar-alpha-3-4-x-1-4-e-frac-2-3-alpha-x-3-2-tag-39-%E5%90%8C%E6%97%B6%EF%BC%8C%E5%88%A9%E7%94%A8%E8%89%BE%E9%87%8C%E5%87%BD%E6%95%B0%E5%9C%A8-z-%E5%BE%88%E5%A4%A7%E6%97%B6%E5%80%99%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BD%A2%E5%BC%8F%EF%BC%88%E5%9B%BE7%EF%BC%89%EF%BC%8C%E7%AC%AC%E4%BA%8C%E9%87%8D%E5%8F%A0%E5%8C%BA%E7%9A%84%E6%B3%A2%E5%87%BD%E6%95%B0%EF%BC%8837%E5%BC%8F%EF%BC%89%E6%88%90%E4%B8%BA%EF%BC%9A-psi-p-x-simeq-frac-a-2-sqrt-pi-alpha-x-1-4-e-frac-2-3-alpha-x-3-2-frac-b-sqrt-pi-alpha-x-1-4-e-frac-2-3-alpha-x-3-2-tag-40-%E6%AF%94%E8%BE%83%E8%BF%99%E4%B8%A4%E4%B8%AA%E8%A7%A3%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%BE%97%E5%88%B0%EF%BC%9A-a-sqrt-frac-4-pi-alpha-hbar-D-qquadb-0-tag-41-%E5%AF%B9%E7%AC%AC%E4%B8%80%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%87%8D%E5%A4%8D%E4%BB%A5%E4%B8%8A%E6%AD%A5%E9%AA%A4%E3%80%82%E6%AD%A4%E6%97%B6-p-x-%E4%BB%8D%E7%94%B1%EF%BC%8838%EF%BC%89%E5%BC%8F%E7%BB%99%E5%87%BA%EF%BC%8C%E5%8F%AA%E4%B8%8D%E8%BF%87%E7%8E%B0%E5%9C%A8-x-%E4%B8%BA%E8%B4%9F%EF%BC%8C%E6%89%80%E4%BB%A5%EF%BC%9A-int-x-0-p-x%E2%80%99-dx%E2%80%99-cong-frac-2-3-hbar-alpha-x-3-2-tag-42-WKB%E6%B3%A2%E5%87%BD%E6%95%B0%EF%BC%8831%E5%BC%8F%EF%BC%89%E4%B8%BA%EF%BC%9A-psi-x-cong-frac-1-sqrt-hbar-alpha-3-4-x-1-4-left-B-e-tfrac-i-3-tfrac-2-hbar-alpha-x-3-2-C-e-tfrac-i-3-tfrac-2-hbar-alpha-x-3-2-right-tag-43-%E5%90%8C%E6%97%B6%EF%BC%8C%E5%88%A9%E7%94%A8%E8%89%BE%E9%87%8C%E5%87%BD%E6%95%B0%E5%9C%A8%E8%B4%9F%E7%9A%84%E5%A4%A7-z-%E6%97%B6%E5%80%99%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8F%EF%BC%88%E5%9B%BE7%EF%BC%89%EF%BC%8C%E4%BF%AE%E8%A1%A5%E6%B3%A2%E5%87%BD%E6%95%B0%EF%BC%8837%E5%BC%8F%EF%BC%8C%E5%85%B6%E4%B8%AD-b-0-%EF%BC%89%E4%B8%BA%EF%BC%9A-begin-aligned-psi-p-x-cong-frac-a-sqrt-pi-alpha-x-1-4-sin-left-frac-2-3-alpha-x-3-2-frac-pi-4-right-0-5em-frac-a-sqrt-pi-alpha-x-1-4-cdot-frac-1-2i-left-e-i-pi-4-e-tfrac-i2-3-alpha-x-3-2"><span class="toc-text">​		 在重叠区(32)式成立，那么利用(34)式的表述，可以得到：
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://ystein.cc">严斯坦</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://ystein.cc/2025/10/28/WKB%E8%BF%91%E4%BC%BC/">http://ystein.cc/2025/10/28/WKB%E8%BF%91%E4%BC%BC/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://ystein.cc" target="_blank">Ystein</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/WKB%E8%BF%91%E4%BC%BC.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2025/05/04/%E5%B5%8C%E5%85%A5%E5%BC%8Fc%E8%AF%AD%E8%A8%80/" title="嵌入式c语言笔记"><img class="cover" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">嵌入式c语言笔记</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">严斯坦</div><div class="author-info__description">蔑视比较</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/y4t11"><i class="fab fa-github"></i><span>博主的github首页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:yansitan7@gmail.com" target="_blank" title="Email Me"><i class="fas fa-regular fa-envelope"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">WKB近似</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3"><span class="toc-text">基本思想</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E5%8C%BA%E5%9F%9F"><span class="toc-text">经典区域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%82%E8%A7%A3%E6%B3%A2%E5%87%BD%E6%95%B0"><span class="toc-text">求解波函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E9%99%90%E6%B7%B1%E5%8A%BF%E9%98%B1"><span class="toc-text">无限深势阱</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9A%A7%E7%A9%BF%E5%8C%BA%E5%9F%9F"><span class="toc-text">隧穿区域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E7%BB%B4%E5%8A%BF%E5%9E%92%E9%9A%A7%E7%A9%BF"><span class="toc-text">一维势垒隧穿</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%CE%B1%E8%A1%B0%E5%8F%98%EF%BC%88Gamow%E2%80%99s-theory-of-alpha-decay%EF%BC%89"><span class="toc-text">α衰变（Gamow’s theory of alpha decay）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E5%8C%BA%E5%9F%9F"><span class="toc-text">连接区域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E5%85%AC%E5%BC%8F"><span class="toc-text">连接公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%80%8B-%E5%9C%A8%E9%87%8D%E5%8F%A0%E5%8C%BA-32-%E5%BC%8F%E6%88%90%E7%AB%8B%EF%BC%8C%E9%82%A3%E4%B9%88%E5%88%A9%E7%94%A8-34-%E5%BC%8F%E7%9A%84%E8%A1%A8%E8%BF%B0%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%BE%97%E5%88%B0%EF%BC%9A-p-x-equiv-sqrt-2m-E-E-V%E2%80%99-0-x-hbar-alpha-3-2-sqrt-x-tag-38-%E7%89%B9%E5%88%AB%E5%9C%B0%EF%BC%8C%E5%9C%A8%E5%8F%B3%E4%BE%A7%E7%AC%AC%E4%BA%8C%E4%B8%AA%E7%9B%B8%E4%BA%A4%E5%8C%BA%EF%BC%9A-int-0-x-p-x%E2%80%99-dx%E2%80%99-equiv-hbar-alpha-3-2-int-0-x-sqrt-x%E2%80%99-dx%E2%80%99-dfrac-2-3-hbar-alpha-x-3-2-%E5%9B%A0%E6%AD%A4WKB%E6%B3%A2%E5%87%BD%E6%95%B0%EF%BC%8831%E5%BC%8F%EF%BC%89%E5%8F%AF%E4%BB%A5%E5%86%99%E6%88%90%EF%BC%9A-psi-x-cong-frac-D-sqrt-hbar-alpha-3-4-x-1-4-e-frac-2-3-alpha-x-3-2-tag-39-%E5%90%8C%E6%97%B6%EF%BC%8C%E5%88%A9%E7%94%A8%E8%89%BE%E9%87%8C%E5%87%BD%E6%95%B0%E5%9C%A8-z-%E5%BE%88%E5%A4%A7%E6%97%B6%E5%80%99%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BD%A2%E5%BC%8F%EF%BC%88%E5%9B%BE7%EF%BC%89%EF%BC%8C%E7%AC%AC%E4%BA%8C%E9%87%8D%E5%8F%A0%E5%8C%BA%E7%9A%84%E6%B3%A2%E5%87%BD%E6%95%B0%EF%BC%8837%E5%BC%8F%EF%BC%89%E6%88%90%E4%B8%BA%EF%BC%9A-psi-p-x-cong-frac-a-2-sqrt-pi-alpha-x-1-4-e-frac-2-3-alpha-x-3-2-frac-b-sqrt-pi-alpha-x-1-4-e-frac-2-3-alpha-x-3-2-tag-40-%E6%AF%94%E8%BE%83%E8%BF%99%E4%B8%A4%E4%B8%AA%E8%A7%A3%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%BE%97%E5%88%B0%EF%BC%9A-a-sqrt-frac-4-pi-alpha-hbar-D-qquadb-0-tag-41-%E5%AF%B9%E7%AC%AC%E4%B8%80%E9%87%8D%E5%8F%A0%E5%8C%BA%E9%87%8D%E5%A4%8D%E4%BB%A5%E4%B8%8A%E6%AD%A5%E9%AA%A4%E3%80%82%E6%AD%A4%E6%97%B6-p-x-%E4%BB%8D%E7%94%B1%EF%BC%8838%EF%BC%89%E5%BC%8F%E7%BB%99%E5%87%BA%EF%BC%8C%E5%8F%AA%E4%B8%8D%E8%BF%87%E7%8E%B0%E5%9C%A8-x-%E4%B8%BA%E8%B4%9F%EF%BC%8C%E6%89%80%E4%BB%A5%EF%BC%9A-int-x-0-p-x%E2%80%99-dx%E2%80%99-cong-frac-2-3-hbar-alpha-x-3-2-tag-42-WKB%E6%B3%A2%E5%87%BD%E6%95%B0%EF%BC%8831%E5%BC%8F%EF%BC%89%E4%B8%BA%EF%BC%9A-psi-x-cong-frac-1-sqrt-hbar-alpha-3-4-x-1-4-left-B-e-tfrac-i-3-tfrac-2-hbar-alpha-x-3-2-C-e-tfrac-i-3-tfrac-2-hbar-alpha-x-3-2-right-tag-43-%E5%90%8C%E6%97%B6%EF%BC%8C%E5%88%A9%E7%94%A8%E8%89%BE%E9%87%8C%E5%87%BD%E6%95%B0%E5%9C%A8%E8%B4%9F%E7%9A%84%E5%A4%A7-z-%E6%97%B6%E5%80%99%E7%9A%84%E6%B8%90%E8%BF%9B%E5%BC%8F%EF%BC%88%E5%9B%BE7%EF%BC%89%EF%BC%8C%E4%BF%AE%E8%A1%A5%E6%B3%A2%E5%87%BD%E6%95%B0%EF%BC%8837%E5%BC%8F%EF%BC%8C%E5%85%B6%E4%B8%AD-b-0-%EF%BC%89%E4%B8%BA%EF%BC%9A-begin-aligned-psi-p-x-cong-frac-a-sqrt-pi-alpha-x-1-4-sin-left-frac-2-3-alpha-x-3-2-frac-pi-4-right-0-5em-frac-a-sqrt-pi-alpha-x-1-4-cdot-frac-1-2i-left-e-i-pi-4-e-tfrac-i2-3-alpha-x-3-2"><span class="toc-text">​		 在重叠区(32)式成立，那么利用(34)式的表述，可以得到：
 $$
 p(x) \equiv \sqrt{2m(E - E - V’(0)x)}
 &#x3D; \hbar \alpha^{3&#x2F;2} \sqrt{-x}  \tag{38}
@@ -566,13 +561,13 @@ $$
 $$
 因此WKB波函数（31式）可以写成：
 $$
-\psi(x) \simeq
+\psi(x) \cong
 \frac{D}{\sqrt{\hbar},\alpha^{3&#x2F;4} x^{1&#x2F;4}}
 , e^{-\frac{2}{3}(\alpha x)^{3&#x2F;2}}  \tag{39}
 $$
 同时，利用艾里函数在$z$很大时候的渐进形式（图7），第二重叠区的波函数（37式）成为：
 $$
-\psi_p(x) \simeq
+\psi_p(x) \cong
 \frac{a}{2\sqrt{\pi},(\alpha x)^{1&#x2F;4}}
 e^{-\frac{2}{3}(\alpha x)^{3&#x2F;2}}
 +

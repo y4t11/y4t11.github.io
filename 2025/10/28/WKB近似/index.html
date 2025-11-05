@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://ystein.cc/img/WKB%E8%BF%91%E4%BC%BC.png">
 <meta property="article:published_time" content="2025-10-28T05:44:23.203Z">
-<meta property="article:modified_time" content="2025-11-04T08:41:28.789Z">
+<meta property="article:modified_time" content="2025-11-05T02:22:54.666Z">
 <meta property="article:author" content="严斯坦">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://ystein.cc/img/WKB%E8%BF%91%E4%BC%BC.png"><link rel="shortcut icon" href="https://pic.baike.soso.com/p/20140221/bki-20140221062737-360633136.jpg"><link rel="canonical" href="http://ystein.cc/2025/10/28/WKB%E8%BF%91%E4%BC%BC/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
@@ -55,7 +55,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2025-11-04 16:41:28'
+  postUpdate: '2025-11-05 10:22:54'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -220,7 +220,7 @@ $$<br>
 $$<br>
 也就是：<br>
 $$<br>
-\phi(x) = \pm \frac{1}{\hbar} \int p(x), dx.  \tag{10}<br>
+\phi(x) = \pm \frac{1}{\hbar} \int p(x)\ dx.  \tag{10}<br>
 $$<br>
 将常数项并入C中（比如$\sqrt{\hbar}$），波函数就可以表示为：<br>
 $$<br>
@@ -253,7 +253,7 @@ $$<br>
 $$<br>
 其中<br>
 $$<br>
-\phi(x) = \frac{1}{\hbar} \int_{0}^{x} p(x’), dx’,  \tag{16}<br>
+\phi(x) = \frac{1}{\hbar} \int_{0}^{x} p(x’)\ dx’,  \tag{16}<br>
 $$<br>
 再带入边界条件：当$x=0$时$\psi(x) = 0$，因此$C_{2} = 0$；当$x=a$时$\psi(x) = 0$，因此：<br>
 $$<br>
@@ -261,7 +261,7 @@ $$<br>
 $$<br>
 也就是：<br>
 $$<br>
-\int_{0}^{a} p(x), dx = n\pi\hbar.  \tag{18}<br>
+\int_{0}^{a} p(x)\ dx = n\pi\hbar.  \tag{18}<br>
 $$<br>
 (18)便是我们喜闻乐见的量子化条件。我们发现即使做了近似，仍然能够得到准确的量子化条件，还挺神奇的。</p>
 <h2 id="隧穿区域">隧穿区域</h2>
@@ -269,7 +269,7 @@ $$<br>
 <p>​		 上一部分中，我们假设E&gt;V，所以p是实的；那么当E&lt;V的时候，参照公式(11)，可以很容易得到如下的波函数形式，只不过p现在是虚数：<br>
 $$<br>
 \psi(x) \approx \frac{C}{\sqrt{|p(x)|}}<br>
-e^{\pm \frac{1}{\hbar} \int |p(x)| dx}.  \tag{19}<br>
+e^{\pm \frac{1}{\hbar} \int |p(x)| dx}  \tag{19}<br>
 $$<br>
 现在我们考虑一个简单的一维势垒隧穿问题（假设E小于势垒高度）：</p>
 <p><img src="image3.png" alt="image3"></p>
@@ -290,21 +290,21 @@ $$<br>
 $$<br>
 \psi(x) \approx<br>
 \frac{C}{\sqrt{|p(x)|}}<br>
-e^{\frac{1}{\hbar} \int_0^x |p(x’)|, dx’}<br>
+e^{\frac{1}{\hbar} \int_0^x |p(x’)|\ dx’}<br>
 +<br>
 \frac{D}{\sqrt{|p(x)|}}<br>
-e^{-\frac{1}{\hbar} \int_0^x |p(x’)|, dx’}.  \tag{23}<br>
+e^{-\frac{1}{\hbar} \int_0^x |p(x’)|\ dx’}.  \tag{23}<br>
 $$<br>
 我们假设势垒非常高或者非常宽，那么隧穿概率应该很小，以至于从右边界面反射回来的衰逝波（e指数为正的部分）非常小，可以忽略，也就是C=0. 这样的话透射波与入射波的振幅比例就近似等于指数衰减部分右端的幅值：<br>
 $$<br>
 \frac{|F|}{|A|} \sim<br>
-e^{-\frac{1}{\hbar} \int_0^a |p(x’)|, dx’},<br>
+e^{-\frac{1}{\hbar} \int_0^a |p(x’)|\ dx’},<br>
 $$<br>
 所以透射系数T：<br>
 $$<br>
-T \approx e^{-2\gamma}, \qquad<br>
+T \approx e^{-2\gamma} \qquad<br>
 \text{with }<br>
-\gamma \equiv \frac{1}{\hbar} \int_0^a |p(x)|, dx.  \tag{24}<br>
+\gamma \equiv \frac{1}{\hbar} \int_0^a |p(x)|\ dx.  \tag{24}<br>
 $$<br>
 <img src="image4.png" alt="image4"></p>
 <p><strong>图 4</strong> ：一个又高又宽的势垒散射波函数的数值结构</p>
@@ -319,8 +319,8 @@ $$<br>
 (24)中的$\gamma$也就可以表示出来：<br>
 $$<br>
 \gamma = \frac{1}{\hbar} \int_{r_1}^{r_2}<br>
-\sqrt{2m!\left(\frac{1}{4\pi\epsilon_0}\frac{2Ze^2}{r} - E\right)},dr<br>
-= \frac{\sqrt{2mE}}{\hbar} \int_{r_1}^{r_2} \sqrt{\frac{r_2}{r} - 1}, dr.<br>
+\sqrt{2m \left(\frac{1}{4\pi\epsilon_0}\frac{2Ze^2}{r} - E\right)}\ dr<br>
+= \frac{\sqrt{2mE}}{\hbar} \int_{r_1}^{r_2} \sqrt{\frac{r_2}{r} - 1}\ dr.<br>
 $$<br>
 为了计算这个积分，我们做一下换元，令$r = r_2sin^2u$，计算后可以得到：<br>
 $$<br>
@@ -340,13 +340,13 @@ $$<br>
 K_1 \equiv<br>
 \left(\frac{e^2}{4\pi\epsilon_0}\right)<br>
 \frac{\pi\sqrt{2m}}{\hbar}<br>
-= 1.980,\text{MeV}^{1/2},  \tag{28}<br>
+= 1.980\ \text{MeV}^{1/2},  \tag{28}<br>
 $$</p>
 <p>$$<br>
 K_2 \equiv<br>
 \left(\frac{e^2}{4\pi\epsilon_0}\right)^{1/2}<br>
 \frac{4\sqrt{m}}{\hbar}<br>
-= 1.485,\text{fm}^{-1/2}.  \tag{29}<br>
+= 1.485\ \text{fm}^{-1/2}.  \tag{29}<br>
 $$</p>
 <p>($1fm$（费米）等于$10^{-15} m$，是通常原子核的尺度。)</p>
 <p>​		 假设α粒子以平均速度$v$在原子核内运动，与势垒壁碰撞的平均时间为$2r_1/v$，则碰撞概率为$v/2r_1$。每次碰撞的逃逸概率为$e^{-2\gamma}$，那么单位时间内发射概率为$(v/2r_1)e^{-2\gamma}$，因此母核的寿命大概是：<br>
@@ -367,14 +367,10 @@ $$<br>
 \begin{cases}<br>
 \dfrac{1}{\sqrt{p(x)}}<br>
 \left[<br>
-B e^{\dfrac{i}{\hbar}\int_x^{0} p(x’),dx’} +<br>
-C e^{-\dfrac{i}{\hbar}\int_x^{0} p(x’),dx’}<br>
-\right],<br>
-&amp; x &lt; 0<br>
-\<br>
-\dfrac{1}{\sqrt{|p(x)|}} D<br>
-e^{-\dfrac{1}{\hbar}\int_0^{x} |p(x’)|,dx’},<br>
-&amp; x &gt; 0<br>
+B e^{\dfrac{i}{\hbar}\int_x^{0} p(x’)\ dx’} +<br>
+C e^{-\dfrac{i}{\hbar}\int_x^{0} p(x’)\ dx’}<br>
+\right], &amp; x &lt; 0 \<br>
+\dfrac{1}{\sqrt{|p(x)|}} D e^{-\dfrac{1}{\hbar}\int_0^{x} |p(x’)|\ dx’}, &amp; x &gt; 0<br>
 \end{cases}  \tag{31}<br>
 $$<br>
 （假定，当 $x &gt; 0$时，$V(x)$总是大于$E$，在这个区域，我们可以去掉正的指数，因为它随 $x → ∞$ 趋于无限大。）我们的任务就是在边界处把两个解连接起来。但是这里有一个严重困难：在 WKB 近似中，$ψ$ 在转折点（此处 $p(x)→ 0$）趋于无限大。当然，如所预期那样，实际的波函数不会趋于无限大，只是 WKB 近似方法在转折点附近不适用。更准确的说是转折点的边界条件决定了允许能量。我们所需要做的就是要用一个“修补”波函数把两个区域的 WKB 的解连接在一起。</p>
@@ -449,7 +445,7 @@ b = 0  \tag{41}<br>
 $$<br>
 对第一重叠区重复以上步骤。此时$p(x)$仍由（38）式给出，只不过现在$x$为负，所以：<br>
 $$<br>
-\int_x^{0} p(x’),dx’ \cong \frac{2}{3}\hbar,(-\alpha x)^{3/2}  \tag{42}<br>
+\int_x^{0} p(x’)dx’ \cong \frac{2}{3}\hbar,(-\alpha x)^{3/2}  \tag{42}<br>
 $$<br>
 WKB波函数（31式）为：<br>
 $$<br>
@@ -466,12 +462,10 @@ $$<br>
 \begin{aligned}<br>
 \psi_p(x) &amp;\cong<br>
 \frac{a}{\sqrt{\pi},(-\alpha x)^{1/4}}<br>
-\sin!\left[<br>
+\sin\left[<br>
 \frac{2}{3}(-\alpha x)^{3/2} + \frac{\pi}{4}<br>
-\right] \[0.5em]<br>
-&amp;=<br>
-\frac{a}{\sqrt{\pi},(-\alpha x)^{1/4}} \cdot<br>
-\frac{1}{2i}<br>
+\right] \<br>
+&amp;= \frac{a}{\sqrt{\pi},(-\alpha x)^{1/4}} \cdot \frac{1}{2i}<br>
 \left[<br>
 e^{i\pi/4} e^{\tfrac{i2}{3}(-\alpha x)^{3/2}} - e^{-i\pi/4} e^{-\tfrac{i2}{3}(-\alpha x)^{3/2}}<br>
 \right]<br>
@@ -496,15 +490,11 @@ $$<br>
 \psi(x) \cong<br>
 \begin{cases}<br>
 \dfrac{2D}{\sqrt{p(x)}}<br>
-\sin!\left[<br>
-\dfrac{1}{\hbar}!\int_x^{x_2}! p(x’),dx’ + \dfrac{\pi}{4}<br>
-\right],<br>
-&amp; x &lt; x_2 \[1.2em]<br>
+\sin\left[<br>
+\dfrac{1}{\hbar}\int_x^{x_2} p(x’)dx’ + \dfrac{\pi}{4}<br>
+\right], &amp; x &lt; x_2 \<br>
 \dfrac{D}{\sqrt{|p(x)|}}<br>
-\exp!\left[<br>
--\dfrac{1}{\hbar}!\int_{x_2}^{x}! |p(x’)|,dx’<br>
-\right],<br>
-&amp; x &gt; x_2<br>
+\exp\left[ -\dfrac{1}{\hbar}\int_{x_2}^{x} |p(x’)|dx’ \right], &amp; x &gt; x_2<br>
 \end{cases}  \tag{46}<br>
 $$</p>
 <h3 id="一维简谐振子的束缚态能级">一维简谐振子的束缚态能级</h3>
@@ -513,12 +503,10 @@ $$<br>
 \psi(x) \cong<br>
 \begin{cases}<br>
 \dfrac{D’}{\sqrt{|p(x)|}}<br>
-\exp!\left[<br>
--\dfrac{1}{\hbar}!\int_{x}^{x_1}!|p(x’)|,dx’<br>
-\right], &amp; x &lt; x_1 \[1.2em]<br>
+\exp\left[ -\dfrac{1}{\hbar}\int_{x}^{x_1}|p(x’)|dx’ \right], &amp; x &lt; x_1 \<br>
 \dfrac{2D’}{\sqrt{p(x)}}<br>
-\sin!\left[<br>
-\dfrac{1}{\hbar}!\int_{x_1}^{x}!p(x’),dx’ + \dfrac{\pi}{4}<br>
+\sin\left[<br>
+\dfrac{1}{\hbar}\int_{x_1}^{x}p(x’)dx’ + \dfrac{\pi}{4}<br>
 \right], &amp; x &gt; x_1<br>
 \end{cases}  \tag{47}<br>
 $$<br>
@@ -528,7 +516,7 @@ $$<br>
 \dfrac{2D}{\sqrt{p(x)}} \sin \theta_2(x),<br>
 \quad<br>
 \text{其中}\quad<br>
-\theta_2(x) \equiv \dfrac{1}{\hbar}!\int_{x}^{x_2}!p(x’),dx’ + \dfrac{\pi}{4}<br>
+\theta_2(x) \equiv \dfrac{1}{\hbar}\int_{x}^{x_2}p(x’)dx’ + \dfrac{\pi}{4}<br>
 $$<br>
 由（46）式。或者<br>
 $$<br>
@@ -536,7 +524,7 @@ $$<br>
 \dfrac{-2D’}{\sqrt{p(x)}} \sin \theta_1(x),<br>
 \quad<br>
 \text{其中}\quad<br>
-\theta_1(x) \equiv -\dfrac{1}{\hbar}!\int_{x_1}^{x}!p(x’),dx’ - \dfrac{\pi}{4}<br>
+\theta_1(x) \equiv -\dfrac{1}{\hbar}\int_{x_1}^{x}p(x’)dx’ - \dfrac{\pi}{4}<br>
 $$<br>
 由（47）式。显然，两个正弦函数的变量只能相差 $\pi$ 的整数倍：$\theta_2 = \theta_1 + n\pi$，由此得到：<br>
 $$<br>

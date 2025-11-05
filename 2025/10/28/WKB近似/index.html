@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>WKB近似 | Ystein</title><meta name="author" content="严斯坦,yansitan7@gmail.com"><meta name="copyright" content="严斯坦"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="WKB近似 基本思想 ​		 WKB近似是解决一维含时薛定谔方程的一种半经典的近似方法。首先考虑经典情况(E&gt;V)，对于V&#x3D;const的一维含时薛定谔方程，波函数的解总是能写成如下的一般形式： $$ \psi(x) &#x3D; Ae^{\pm ikx}, 其中k &#x3D; \sqrt{2m(E-V)}&#x2F; \hbar $$ 这是一个三角函数，e的指数部分的正负代表波函数的方向（向右传播还是向左传播），波长(">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>WKB近似 | Ystein</title><meta name="author" content="严斯坦,yansitan7@gmail.com"><meta name="copyright" content="严斯坦"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="WKB近似 基本思想 WKB近似是解决一维含时薛定谔方程的一种半经典的近似方法。首先考虑经典情况(E&gt;V)，对于V&#x3D;const的一维含时薛定谔方程，波函数的解总是能写成如下的一般形式： $$ \psi(x) &#x3D; Ae^{\pm ikx}, 其中k &#x3D; \sqrt{2m(E-V)}&#x2F; \hbar $$ 这是一个三角函数，e的指数部分的正负代表波函数的方向（向右传播还是向左传播），波长($\la">
 <meta property="og:type" content="article">
 <meta property="og:title" content="WKB近似">
 <meta property="og:url" content="http://ystein.cc/2025/10/28/WKB%E8%BF%91%E4%BC%BC/index.html">
 <meta property="og:site_name" content="Ystein">
-<meta property="og:description" content="WKB近似 基本思想 ​		 WKB近似是解决一维含时薛定谔方程的一种半经典的近似方法。首先考虑经典情况(E&gt;V)，对于V&#x3D;const的一维含时薛定谔方程，波函数的解总是能写成如下的一般形式： $$ \psi(x) &#x3D; Ae^{\pm ikx}, 其中k &#x3D; \sqrt{2m(E-V)}&#x2F; \hbar $$ 这是一个三角函数，e的指数部分的正负代表波函数的方向（向右传播还是向左传播），波长(">
+<meta property="og:description" content="WKB近似 基本思想 WKB近似是解决一维含时薛定谔方程的一种半经典的近似方法。首先考虑经典情况(E&gt;V)，对于V&#x3D;const的一维含时薛定谔方程，波函数的解总是能写成如下的一般形式： $$ \psi(x) &#x3D; Ae^{\pm ikx}, 其中k &#x3D; \sqrt{2m(E-V)}&#x2F; \hbar $$ 这是一个三角函数，e的指数部分的正负代表波函数的方向（向右传播还是向左传播），波长($\la">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://ystein.cc/img/WKB%E8%BF%91%E4%BC%BC.png">
 <meta property="article:published_time" content="2025-10-28T05:44:23.203Z">
-<meta property="article:modified_time" content="2025-11-05T02:22:54.666Z">
+<meta property="article:modified_time" content="2025-11-05T03:00:02.268Z">
 <meta property="article:author" content="严斯坦">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://ystein.cc/img/WKB%E8%BF%91%E4%BC%BC.png"><link rel="shortcut icon" href="https://pic.baike.soso.com/p/20140221/bki-20140221062737-360633136.jpg"><link rel="canonical" href="http://ystein.cc/2025/10/28/WKB%E8%BF%91%E4%BC%BC/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
@@ -55,7 +55,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2025-11-05 10:22:54'
+  postUpdate: '2025-11-05 11:00:02'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -161,14 +161,14 @@ document.addEventListener('pjax:send', () => {
 })
 </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/WKB%E8%BF%91%E4%BC%BC.png')"><nav id="nav"><span id="blog-info"><a href="/" title="Ystein"><span class="site-name">Ystein</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">WKB近似</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2025-10-28T05:44:23.203Z" title="发表于 2025-10-28 13:44:23">2025-10-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>17分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="WKB近似"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>WKB近似</h1>
 <h2 id="基本思想">基本思想</h2>
-<p>​		 WKB近似是解决一维含时薛定谔方程的一种半经典的近似方法。首先考虑经典情况(E&gt;V)，对于V=const的一维含时薛定谔方程，波函数的解总是能写成如下的一般形式：<br>
+<p>WKB近似是解决一维含时薛定谔方程的一种半经典的近似方法。首先考虑经典情况(E&gt;V)，对于V=const的一维含时薛定谔方程，波函数的解总是能写成如下的一般形式：<br>
 $$<br>
 \psi(x) = Ae^{\pm ikx}, 其中k = \sqrt{2m(E-V)}/ \hbar<br>
 $$<br>
 这是一个三角函数，e的指数部分的正负代表波函数的方向（向右传播还是向左传播），波长($\lambda=2\pi/k$)与振幅(A)都是定值。<br>
 当势能V不是定值，但是相对$\lambda$变化缓慢的时候，对于某一个包含很多波长的区域，可以用三角函数来近似表示波函数，只不过这时候的A和$\lambda$都不再是定值，而是随x改变的变量。</p>
 <p>同理，如果E&lt;V ( V=const )，波函数的一般形式为：$\psi(x) = Ae^{\pm \kappa x}, 其中\kappa = \sqrt{2m(V-E)}/ \hbar$，当V不是定值，但相对$1/ \kappa$变化缓慢时，仍然可以写成如上形式，只不过这时候的A和$\kappa$都是关于x的变量。</p>
-<p>​		 现在，就只剩一个遗留问题：在转折点处，也就是$E \approx V$时，该如何处理？此时的$\lambda$(or $1/ \kappa$)都会趋于无穷，V也就很难说是随波长变化缓慢了。这时候就应该做一些近似，后续会讲到，这里我们先考虑E&gt;V和E&lt;V情况下的一些应用。</p>
+<p>现在，就只剩一个遗留问题：在转折点处，也就是$E \approx V$时，该如何处理？此时的$\lambda$(or $1/ \kappa$)都会趋于无穷，V也就很难说是随波长变化缓慢了。这时候就应该做一些近似，后续会讲到，这里我们先考虑E&gt;V和E&lt;V情况下的一些应用。</p>
 <h2 id="经典区域">经典区域</h2>
 <h3 id="求解波函数">求解波函数</h3>
 <p>薛定谔方程：<br>
@@ -237,7 +237,7 @@ $$<br>
 $$<br>
 V(x) =<br>
 \begin{cases}<br>
-\text{some specified function}, &amp; (0 &lt; x &lt; a), \<br>
+\text{some specified function}, &amp; (0 &lt; x &lt; a), \\<br>
 \infty, &amp; \text{(otherwise)}.<br>
 \end{cases}  \tag{13}<br>
 $$<br>
@@ -369,7 +369,8 @@ $$<br>
 \left[<br>
 B e^{\dfrac{i}{\hbar}\int_x^{0} p(x’)\ dx’} +<br>
 C e^{-\dfrac{i}{\hbar}\int_x^{0} p(x’)\ dx’}<br>
-\right], &amp; x &lt; 0 \<br>
+\right], &amp; x &lt; 0<br>
+\\<br>
 \dfrac{1}{\sqrt{|p(x)|}} D e^{-\dfrac{1}{\hbar}\int_0^{x} |p(x’)|\ dx’}, &amp; x &gt; 0<br>
 \end{cases}  \tag{31}<br>
 $$<br>
@@ -464,7 +465,8 @@ $$<br>
 \frac{a}{\sqrt{\pi},(-\alpha x)^{1/4}}<br>
 \sin\left[<br>
 \frac{2}{3}(-\alpha x)^{3/2} + \frac{\pi}{4}<br>
-\right] \<br>
+\right]<br>
+\\<br>
 &amp;= \frac{a}{\sqrt{\pi},(-\alpha x)^{1/4}} \cdot \frac{1}{2i}<br>
 \left[<br>
 e^{i\pi/4} e^{\tfrac{i2}{3}(-\alpha x)^{3/2}} - e^{-i\pi/4} e^{-\tfrac{i2}{3}(-\alpha x)^{3/2}}<br>
@@ -492,7 +494,8 @@ $$<br>
 \dfrac{2D}{\sqrt{p(x)}}<br>
 \sin\left[<br>
 \dfrac{1}{\hbar}\int_x^{x_2} p(x’)dx’ + \dfrac{\pi}{4}<br>
-\right], &amp; x &lt; x_2 \<br>
+\right], &amp; x &lt; x_2<br>
+\\<br>
 \dfrac{D}{\sqrt{|p(x)|}}<br>
 \exp\left[ -\dfrac{1}{\hbar}\int_{x_2}^{x} |p(x’)|dx’ \right], &amp; x &gt; x_2<br>
 \end{cases}  \tag{46}<br>
@@ -503,7 +506,8 @@ $$<br>
 \psi(x) \cong<br>
 \begin{cases}<br>
 \dfrac{D’}{\sqrt{|p(x)|}}<br>
-\exp\left[ -\dfrac{1}{\hbar}\int_{x}^{x_1}|p(x’)|dx’ \right], &amp; x &lt; x_1 \<br>
+\exp\left[ -\dfrac{1}{\hbar}\int_{x}^{x_1}|p(x’)|dx’ \right], &amp; x &lt; x_1<br>
+\\<br>
 \dfrac{2D’}{\sqrt{p(x)}}<br>
 \sin\left[<br>
 \dfrac{1}{\hbar}\int_{x_1}^{x}p(x’)dx’ + \dfrac{\pi}{4}<br>

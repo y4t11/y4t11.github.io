@@ -4,11 +4,24 @@
   
     
     <entry>
-      <title>嵌入式学习记录（新）</title>
-      <link href="/2026/07/05/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%A6%E4%B9%A02/"/>
-      <url>/2026/07/05/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%A6%E4%B9%A02/</url>
+      <title></title>
+      <link href="/2026/09/24/%E6%B6%B2%E6%99%B6%E6%98%BE%E7%A4%BA%E5%99%A8%EF%BC%88LCD%EF%BC%89%E5%8E%9F%E7%90%86%E4%B8%8E%E8%89%B2%E5%BD%A9%E7%AE%A1%E7%90%86/"/>
+      <url>/2026/09/24/%E6%B6%B2%E6%99%B6%E6%98%BE%E7%A4%BA%E5%99%A8%EF%BC%88LCD%EF%BC%89%E5%8E%9F%E7%90%86%E4%B8%8E%E8%89%B2%E5%BD%A9%E7%AE%A1%E7%90%86/</url>
       
-        <content type="html"><![CDATA[<h2 id="电子online-硬件工程师入门教程（https-www-bilibili-com-video-BV1gHSyY3E6q-p-10-amp-vd-source-c8fd9a926f52bb7d1b03d61054458801）"><a href="#电子online-硬件工程师入门教程（https-www-bilibili-com-video-BV1gHSyY3E6q-p-10-amp-vd-source-c8fd9a926f52bb7d1b03d61054458801）" class="headerlink" title="电子online  硬件工程师入门教程（https://www.bilibili.com/video/BV1gHSyY3E6q?p=10&amp;vd_source=c8fd9a926f52bb7d1b03d61054458801）"></a>电子online  硬件工程师入门教程（<a href="https://www.bilibili.com/video/BV1gHSyY3E6q?p=10&amp;vd_source=c8fd9a926f52bb7d1b03d61054458801）">https://www.bilibili.com/video/BV1gHSyY3E6q?p=10&amp;vd_source=c8fd9a926f52bb7d1b03d61054458801）</a></h2><p>单片机的复位引脚是低电平有效的</p><p>弱上拉电阻一般10k</p><h3 id="电容"><a href="#电容" class="headerlink" title="电容"></a>电容</h3><p>电解电容是分正负的，长的是正极断的是负极。<br>电容是会炸的！！反接或者超过额定电压都会炸，炸之前电流会逐步上升。<br>固态电解电容温度特性会好很多。</p><p>cbb电容没有正负，耐压可以做到很高，高频特性也可以做的很好。</p><p><img src="image-20260714195456657.png" alt="image-20260714195456657"></p><h4 id="重要特性：两端电压不能突变"><a href="#重要特性：两端电压不能突变" class="headerlink" title="重要特性：两端电压不能突变"></a>重要特性：两端电压不能突变</h4>]]></content>
+        <content type="html"><![CDATA[<h1>液晶显示器（LCD）原理与色彩管理</h1><h2 id="核心原理">核心原理</h2><p>$$<br>LCD的核心原理是用电场改变液晶分子的排列方向，从而控制背光能否穿过每个像素，形成明暗和颜色。<br>$$</p><p><img src="22803cdc12fa48d6a528e0eb868ae604.png" alt="LCD 面板的典型分层结构"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>嵌入式学习记录（新）</title>
+      <link href="/2026/09/24/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%A6%E4%B9%A02/"/>
+      <url>/2026/09/24/%E5%B5%8C%E5%85%A5%E5%BC%8F%E5%AD%A6%E4%B9%A02/</url>
+      
+        <content type="html"><![CDATA[<h2 id="电子online-硬件工程师入门教程（https-www-bilibili-com-video-BV1gHSyY3E6q-p-10-vd-source-c8fd9a926f52bb7d1b03d61054458801）">电子online  硬件工程师入门教程（<a href="https://www.bilibili.com/video/BV1gHSyY3E6q?p=10&amp;vd_source=c8fd9a926f52bb7d1b03d61054458801%EF%BC%89">https://www.bilibili.com/video/BV1gHSyY3E6q?p=10&amp;vd_source=c8fd9a926f52bb7d1b03d61054458801）</a></h2><p>单片机的复位引脚是低电平有效的</p><p>弱上拉电阻一般10k</p><h3 id="电容">电容</h3><p>电解电容是分正负的，长的是正极断的是负极。<br>电容是会炸的！！反接或者超过额定电压都会炸，炸之前电流会逐步上升。<br>固态电解电容温度特性会好很多。</p><p>cbb电容没有正负，耐压可以做到很高，高频特性也可以做的很好。</p><p><img src="image-20260714195456657.png" alt="image-20260714195456657"></p><h4 id="重要特性：两端电压不能突变">重要特性：两端电压不能突变</h4><p>注意是相对电压不能突变，但是两端电压可以同时突变。</p><p>计算时可以先把电容看成导线，得到两端电压。</p><h4 id="电容的储能特性">电容的储能特性</h4><p>电容可以理解为一个小电池，电容的充电速度与电容大小以及充电电流有关。<br>$$<br>充电时间常数:\tau = R * C<br>$$<br>RC电路，实现充电延时、关断延时。</p><h4 id="电容的稳压功能和滤波功能">电容的稳压功能和滤波功能</h4><p>为什么很多电路和芯片上都要加电容？减小电压跌落。</p><h4 id="电容的容抗计算公式">电容的容抗计算公式</h4><p>$$<br>R_c = \frac{1}{2\pi fc}<br>$$</p><h2 id="STM32入门教程-2023版-细致讲解-中文字幕（https-www-bilibili-com-video-BV1th411z7sn-p-4-vd-source-c8fd9a926f52bb7d1b03d61054458801）">STM32入门教程-2023版 细致讲解 中文字幕（<a href="https://www.bilibili.com/video/BV1th411z7sn?p=4&amp;vd_source=c8fd9a926f52bb7d1b03d61054458801%EF%BC%89">https://www.bilibili.com/video/BV1th411z7sn?p=4&amp;vd_source=c8fd9a926f52bb7d1b03d61054458801）</a></h2><h3 id="STM32简介">STM32简介</h3><p>STM32是ST公司基于ARMCortex-M内核开发的32位微控制器。</p><p>四种系列：高性能、主流、低功耗、无线系列</p><p><img src="image-20260728211649710.png" alt="image-20260728211649710"></p><p><img src="image-20260728211735235.png" alt="image-20260728211735235"></p><p>深颜色是位于cortex内核里面的外设，浅颜色是内核外的外设。</p><p><img src="image-20260728212556234.png" alt="image-20260728212556234"></p><p>Icode：指令总线，Dcode数据总线，System系统总线。SRAM存储程序运行时的变量数据。<br>AHB：先进高性能总线，挂载最基本或者最重要的外设。<br>APB：先进外设总线，APB2性能高于APB1。</p><p>DMA：类似内核CPU的小秘书。</p><p><img src="image-20260728213453510.png" alt="image-20260728213453510"></p><p>红色：电源相关引脚；蓝色：最小系统相关引脚；绿色：IO口，功能口等。<br>FT代表能容忍5V电压，没有就代表3.3V。</p>]]></content>
       
       
       
